@@ -22,13 +22,7 @@ module.exports.showListing = async (req, res) => {
 };
 
 module.exports.createListing = async (req, res, next) => {
-<<<<<<< HEAD
-  const { title, description,image, price, country, location } = req.body;
-=======
-  let url=req.file.path;
-  let filename=req.file.filename;
-  const { title, description,price, country, location } = req.body;
->>>>>>> 2a2e627 (Added image upload functionality)
+
 
   const listing = {
       title,
