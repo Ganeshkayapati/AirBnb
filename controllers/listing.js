@@ -27,6 +27,7 @@ module.exports.createListing = async (req, res, next) => {
   const listing = {
       title,
       description,
+      image,
       price,
       location,
       country,
