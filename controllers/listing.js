@@ -23,11 +23,10 @@ module.exports.showListing = async (req, res) => {
 
 module.exports.createListing = async (req, res, next) => {
 
-
+   const { title, description, price, country, location } = req.body;
   const listing = {
       title,
       description,
-      image,
       price,
       location,
       country,
